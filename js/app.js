@@ -20,6 +20,7 @@ function Employee(id, firstName, lastName,department,level) {
         }else{
             return "invalid input";
         }
+        document.write(`<h1>${this.level}</h1>`);
   }
   const ghazi = new Employee(1000 ,"Ghazi","Samer","Administration","senior");
   ghazi.checkSalary();
@@ -43,5 +44,5 @@ function Employee(id, firstName, lastName,department,level) {
   hadi.checkSalary();
   console.log(hadi);
   
-  document.write(`<h1>${ghazi.level}</h1>`);
-  
+ 
+  console.log(`${this.level}`)
