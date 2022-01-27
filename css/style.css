@@ -28,6 +28,7 @@ header > h2{
     padding: 50px 15px;
 }
 footer{
+ events
     display:flex;
     grid-column-gap: 30%;
     min-height: 100px;
@@ -57,3 +58,18 @@ main{
     font-size: 12px;
     text-align: center;
   }
+
+    position: relative;
+    font-size: 18px;
+    font-style: italic;
+}
+.one{
+    position: absolute;
+    top: -50%;
+}
+.two{
+    position: absolute;
+    right: 5%;
+    top: -50%;
+}
+ main

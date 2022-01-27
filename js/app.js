@@ -13,14 +13,24 @@ function Employee(id, firstName, lastName,department,level) {
         let level = this.level;
         if((level ==="junior")||(level ==="Junior")){
             this.salary = 500 + (Math.floor(Math.random() * 500) + 1);
+            this.netSalary = this.salary - (this.salary * 0.075);
+            console.log(this.netSalary);
         }else if((level ==="Mid-Senior")||(level ==="mid-senior")){
             this.salary = 1000 + (Math.floor(Math.random() * 500) + 1);
+            this.netSalary = this.salary - (this.salary * 0.075);
+            console.log(this.netSalary);
         }else if((level ==="Senior")||(level ==="senior")){
             this.salary = 1500 + (Math.floor(Math.random() * 500) + 1);
+            this.netSalary = this.salary - (this.salary * 0.075);
+            console.log(this.netSalary);
         }else{
             return "invalid input";
         }
+ events
         document.write(`<h1>${this.level}</h1>`);
+=======
+        document.write(`<h1>${this.salary} ,${this.fullName}</h1>`);
+ main
   }
   const ghazi = new Employee(1000 ,"Ghazi","Samer","Administration","senior");
   ghazi.checkSalary();
@@ -42,7 +52,11 @@ function Employee(id, firstName, lastName,department,level) {
   console.log(rana);
   const hadi = new Employee(1006 ,"Hadi","Ahmad","Finance","mid-senior");
   hadi.checkSalary();
+ events
   console.log(hadi);
   
  
   console.log(`${this.level}`)
+=======
+  console.log(hadi);
+ main
