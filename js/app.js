@@ -9,7 +9,7 @@ function Employee(id, firstName, lastName,department,level) {
   };
 
   Employee.prototype.checkSalary = function(){
-        //this.level = level;
+        //this.level = level;`
         let level = this.level;
         if((level ==="junior")||(level ==="Junior")){
             this.salary = 500 + (Math.floor(Math.random() * 500) + 1);

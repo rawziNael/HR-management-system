@@ -1,57 +1,59 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header{
-    position: relative;
-    background-color:darkblue;
-}
-.a{
-    border-radius: 50%;
-}
-.b{
-    position: absolute;
-    margin-top: -100px;
-    margin-left: 700px;
+    background-color:indigo;
+    width: 100%;
     color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 54px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    display: flex;
+    grid-column-gap: 33.3%;
+    min-height: 100px;
+    justify-content: center;
 }
-.c{
-    position: absolute;
-    padding: 15px 0px 15px 15px;
-    right: 0;
-    margin-top: -100px;
-}
-li{
+
+.nav a{
     float: right;
-}
-li a{
-    display: inline;
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 25px;
     color: white;
     text-decoration: none;
+    padding: 50px 15px;
+    margin-right: 20px;
+    font-weight: bold;
 }
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-main{
-    height: 480px;
+header > h2{
+    padding: 50px 15px;
 }
 footer{
-    position: relative;
-    font-size: 18px;
-    font-style: italic;
+    display:flex;
+    grid-column-gap: 30%;
+    min-height: 100px;
+    background-color:indigo;
+    color: white;
 }
-.one{
-    position: absolute;
-    top: -50%;
+footer > p , h4{
+    padding: 30px 15px;
 }
-.two{
-    position: absolute;
-    right: 5%;
-    top: -50%;
+main{
+    display: flex;
+    grid-column-gap: 50%;
+    min-height: 500px;
+    padding-top: 15px;
 }
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+}
+  .gallery img{
+    width: 100%;
+    height: auto;
+  }
+  .center{
+    font-size: 12px;
+    text-align: center;
+  }
