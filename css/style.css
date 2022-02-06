@@ -6,42 +6,52 @@ body{
     padding: 0;
 }
 
-header{
-    background-color:indigo;
+.container{
+    display: flex;
+    /* justify-content: row; */
+    background-color: indigo;
+    align-items: center;
+    height: 20%;
     width: 100%;
     color: white;
-    display: flex;
-    grid-column-gap: 33.3%;
-    min-height: 100px;
-    justify-content: center;
 }
+/*new one*/
+.nav{
+    display: flex;
+    margin-left: auto;
+} 
 
 .nav a{
-    float: right;
-    color: white;
-    text-decoration: none;
-    padding: 50px 15px;
-    margin-right: 20px;
-    font-weight: bold;
+   color: white;
+   text-decoration: none;
+   font-size: 24px;
+   font-weight: bold;
+   padding: 20px;
 }
-header > h2{
-    padding: 50px 15px;
+
+.container img{
+   border-radius: 50%;
 }
+
+.container h3{
+   font-size: 24px;
+   color: white;
+}
+
 footer{
- events
     display:flex;
     grid-column-gap: 30%;
     min-height: 100px;
     background-color:indigo;
     color: white;
 }
-footer > p , h4{
+/* footer > p , h4{
     padding: 30px 15px;
-}
-main{
+} */
+.main{
     display: flex;
     grid-column-gap: 50%;
-    min-height: 500px;
+    min-height: 550px;
     padding-top: 15px;
 }
 .gallery{
@@ -59,17 +69,3 @@ main{
     text-align: center;
   }
 
-    position: relative;
-    font-size: 18px;
-    font-style: italic;
-}
-.one{
-    position: absolute;
-    top: -50%;
-}
-.two{
-    position: absolute;
-    right: 5%;
-    top: -50%;
-}
- main
