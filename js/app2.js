@@ -11,8 +11,10 @@ function generateId() {
   return id;
 }
 
-let form= document.getElementById('form');
+let form= document.getElementById('fill');
 let data = document.getElementById("section1");
+
+
 //create array
 let allEmployees = [];
 //call the function
@@ -20,8 +22,9 @@ checkLocalAndPush();
 
 
 function render(employeeStorage) {
+  let div = document.createElement('div');
+  div.innerHTML = '';
   for (let i = 0; i < employeeStorage.length; i++) {
-    let div = document.createElement('div');
     section2.appendChild(div);
     div.className = "gallery";
 
@@ -103,5 +106,4 @@ function saveToLocalS(jsonArray) {
   localStorage.setItem('employees', jsonArray)
 }
 render(readFromLocalS());
-console.log(form);
 form.addEventListener('submit',fillForm );
